@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('assets/home/background-home-desktop.jpg');
+    background-image: url('../assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
 }
 
@@ -37,11 +37,15 @@ nav {
     font-size: 16px;
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
+    padding-bottom: 36px;
+    padding-top: 36px;
+}
+.nav-list a:hover {
+    border-bottom: 2px solid white;
+    transition: .3s;
 }
 .active {
     border-bottom: 2px solid white;
-    padding-bottom: 36px;
-    padding-top: 36px;
 }
 
 article {
