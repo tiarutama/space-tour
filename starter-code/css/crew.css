@@ -5,8 +5,8 @@
 }
 
 body {
-    background-image: url('../assets/destination/background-destination-desktop.jpg');
-    background-repeat: round;
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-repeat: no-repeat;
 }
 
 header {
@@ -47,11 +47,9 @@ header {
 .active {
     border-bottom: 2px solid white;
 }
-
 section.preview {
-    float: left;
     margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 section.preview h2 {
     font-family: 'Barlow Condensed', sans-serif;
@@ -66,75 +64,65 @@ section.preview h2 {
     letter-spacing: 4.725px;
     opacity: .25;
 }
-section.preview img {
-    margin-top: 20%;
-    margin-left: 5%;
-}
 
-section.main {
-    float: right;
-    width: 445px;
+article.main {
+    float: left;
+    width: 650px;
+    margin-left: 10%;
     margin-top: 10%;
-    margin-right: 5%;
 }
-nav.destination {
-    display: flex;
-    justify-content: space-between;
-    width: 250px;
-}
-.destination a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
+.description h2 {
+    font-family: 'Bellefair', serif;
     font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 2.7px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.destination a:hover {
-    border-bottom: 2px solid white;
-}
-article {
-    margin-top: 50px;
-}
-.description {
-    padding-bottom: 80px;
-    border-bottom: 1px solid rgba(56, 59, 75, 1);
+    font-size: 32px;
+    color: white;
+    opacity: .5;
 }
 .description h1 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
-    font-size: 100px;
+    font-size: 56px;
     color: white;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .description p {
     font-family: 'Barlow', sans-serif;
+    font-weight: 400;
     font-size: 18px;
-    font-weight: 400;
     color: rgba(208, 214, 249, 1);
+    margin-top: 40px;
 }
-.detail-left {
-    float: left;
-    margin-top: 25px;
+
+.crew-list {
+    display: flex;
+    width: 132px;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
-.detail-right {
-    float: right;
-    margin-top: 25px;
-    margin-right: 50px;
+.crew-list div {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: .17;
+    cursor: pointer;
 }
-.detail-left p, .detail-right p {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 2.36px;
-    color: rgba(208, 214, 249, 1);
-    margin-bottom: 20px;
+.crew-list div:hover {
+    opacity: 1;
+    transition: .3s;
 }
-.detail-left h2, .detail-right h2 {
-    font-family: 'Bellefair', serif;
-    font-weight: 400;
-    font-size: 28px;
-    color: white;
+.crew-list div.active {
+    opacity: 1;
+}
+
+img.image {
+    display: block;
+    height: 544px;
+    width: 450px;
+    object-fit: fill;
+    position: relative;
+    bottom: -55px;
+    right: -10px;
 }

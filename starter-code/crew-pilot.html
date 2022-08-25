@@ -3,26 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="css/crew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Crew</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
+  <header>
+    <a href="index.html"><img class="logo" src="assets/shared/logo.svg" alt="logo"></a>
+  <nav class="nav-head">
+    <div class="nav-list">
+    <a href="index.html"><b>00</b> HOME</a>
+    <a href="destination-moon.html"><b>01</b> DESTINATION</a>
+    <a class="active" href="crew-commander.html"><b>02</b> CREW</a>
+    <a href="technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+    </div>
+  </nav>
+  </header>
+  <section class="preview">
+    <h2><b>02</b> MEET YOUR CREW</h2>
+  </section>
+    <article class="main">
+      <div class="description">
+        <h2>PILOT</h2>
+        <h1>VICTOR GLOVER</h1>
+        <p>Pilot on the first operational flight of the SpaceX Crew <br> Dragon to the International Space Station. Glover is a <br> commander in the U.S. Navy where he pilots an F/A-18.He <br> was a crew member of Expedition 64, and served as a <br> station systems flight engineer.</p>
+      </div>
+      <div class="crew-list">
+        <div id="commander" class="commander"></div>
+        <div id="specialist" class="specialist"></div>
+        <div id="pilot" class="active pilot"></div>
+        <div id="engineer" class="engineer"></div>
+      </div>
+    </article>
+      <img class="image" src="assets/crew/image-victor-glover.png" alt="pilot">
+    <script src="js/script.js"></script>
 </body>
 </html>
