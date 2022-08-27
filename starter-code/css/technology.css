@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 192px;
+    color: white;
+}
+.logo {
+    margin-left: 100px;
+}
+.nav-head {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .07);
+    backdrop-filter: blur(15px);
+    height: 50%;
+}
+.nav-list {
+    display: flex;
+    width: 830px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-list a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    padding-bottom: 36px;
+    padding-top: 36px;
+}
+.nav-list a:hover {
+    border-bottom: 2px solid white;
+}
+.nav-list a.active {
+    border-bottom: 2px solid white;
+}
+section.preview {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+section.preview h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: white;
+}
+.preview h2 b {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    opacity: .25;
+}
+
+article.main {
+    width: 100%;
+}
+span.number {
+    display: inline-block;
+    width: 100px;
+    margin-top: 200px;
+    margin-left: 7%;
+    float: left;
+}
+.number div {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, .25);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .25);
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+.number div:hover, .number div.active {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(11, 13, 23, 1);
+}
+.number div p {
+    margin: auto;
+}
+span.description {
+    display: inline-block;
+    width: 470px;
+    margin-top: 150px;
+    margin-left: 5%;
+}
+.description p.term {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: rgba(208, 214, 249, 1);
+    margin-bottom: 20px;
+}
+.description h1 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 56px;
+    color: white;
+    margin-bottom: 40px;
+}
+.description p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(208, 214, 249, 1);
+    line-height: 32px;
+}
+
+img.image {
+    position: relative;
+    right: -98px;
+    bottom: -50px;
+}
