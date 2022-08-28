@@ -4,4 +4,4 @@
 
 ## Welcome! 👋
 
-Build with HTML, CSS, JavaScript
+Built with HTML, CSS, JavaScript

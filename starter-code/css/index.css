@@ -106,8 +106,21 @@ aside a {
         background-image: url('../assets/home/background-home-tablet.jpg');
         background-repeat: no-repeat;
     }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 450px;
+    }
     article {
-        margin: 10% auto;
+        margin: 15% auto;
         float: none;
+    }
+    h1, h2, p {
+        text-align: center;
+    }
+    aside {
+        float: none;
+        margin: 8% auto;
     }
 }

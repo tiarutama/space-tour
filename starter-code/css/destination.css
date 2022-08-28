@@ -6,7 +6,7 @@
 
 body {
     background-image: url('../assets/destination/background-destination-desktop.jpg');
-    background-repeat: round;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -48,12 +48,12 @@ header {
     border-bottom: 2px solid white;
 }
 
-section.preview {
+.preview {
     float: left;
     margin-top: 5%;
     margin-left: 15%;
 }
-section.preview h2 {
+.preview h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -66,18 +66,18 @@ section.preview h2 {
     letter-spacing: 4.725px;
     opacity: .25;
 }
-section.preview img {
+.preview img {
     margin-top: 20%;
     margin-left: 5%;
 }
 
-section.main {
+.main {
     float: right;
     width: 445px;
     margin-top: 10%;
     margin-right: 5%;
 }
-nav.destination {
+.destination {
     display: flex;
     justify-content: space-between;
     width: 250px;
@@ -137,4 +137,63 @@ article {
     font-weight: 400;
     font-size: 28px;
     color: white;
+}
+/* tablet view */
+@media (max-width: 768px) {
+    body {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+        background-repeat: no-repeat;
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 450px;
+    }
+    .preview {
+        float: none;
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+    .preview h2 b {
+        margin-left: 5%;
+        font-size: 20px;
+    }
+    .preview h2 {
+        font-size: 20px;
+    }
+    .preview img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main {
+        float: none;
+        margin: 5% auto;
+        width: 80%;
+        text-align: center;
+    }
+    .destination {
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .description {
+        padding-bottom: 50px;
+    }
+    .description h1 {
+        font-size: 80px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .detail-left {
+        margin-left: 15%;
+    }
+    .detail-right {
+        margin-right: 15%;
+    }
 }

@@ -47,11 +47,11 @@ header {
 .active {
     border-bottom: 2px solid white;
 }
-section.preview {
+.preview {
     margin-top: 5%;
     margin-left: 10%;
 }
-section.preview h2 {
+.preview h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -65,7 +65,7 @@ section.preview h2 {
     opacity: .25;
 }
 
-article.main {
+.main {
     float: left;
     width: 650px;
     margin-left: 10%;
@@ -117,7 +117,7 @@ article.main {
     opacity: 1;
 }
 
-img.image {
+.image {
     display: block;
     height: 544px;
     width: 450px;
@@ -125,4 +125,54 @@ img.image {
     position: relative;
     bottom: -55px;
     right: -10px;
+}
+/* tablet view */
+@media (max-width: 768px) {
+    body {
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+        background-repeat: no-repeat;
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 450px;
+    }
+    .preview {
+        float: none;
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+    .preview h2 b {
+        margin-left: 5%;
+        font-size: 20px;
+    }
+    .preview h2 {
+        font-size: 20px;
+    }
+    .main {
+        float: none;
+        width: 70%;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .description h2 {
+        font-size: 24px;
+    }
+    .description h1 {
+        font-size: 40px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .crew-list {
+        margin: 10% auto;
+    }
+    .image {
+        height: 450px;
+        object-fit: contain;
+        margin: 0 auto;
+        bottom: 0;
+    }
 }

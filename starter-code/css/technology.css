@@ -47,11 +47,11 @@ header {
 .nav-list a.active {
     border-bottom: 2px solid white;
 }
-section.preview {
+.preview {
     margin-top: 5%;
     margin-left: 10%;
 }
-section.preview h2 {
+.preview h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 28px;
@@ -65,24 +65,32 @@ section.preview h2 {
     opacity: .25;
 }
 
-article.main {
+.image {
+    position: relative;
+    right: 0;
+    bottom: -50px;
+    float: right;
+}
+
+.main {
     width: 100%;
 }
-span.number {
-    display: inline-block;
-    width: 100px;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
     margin-top: 200px;
     margin-left: 7%;
     float: left;
 }
-.number div {
+.navigation div {
     display: flex;
     width: 70px;
     height: 70px;
     background-color: rgba(255, 255, 255, .25);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, .25);
-    margin-bottom: 25px;
     font-size: 32px;
     font-family: 'Bellefair', serif;
     font-weight: 400;
@@ -90,20 +98,20 @@ span.number {
     color: white;
     cursor: pointer;
 }
-.number div:hover, .number div.active {
+.navigation div:hover, .navigation div.active {
     background-color: rgba(255, 255, 255, 1);
     color: rgba(11, 13, 23, 1);
 }
-.number div p {
+.number {
     margin: auto;
 }
-span.description {
+.description {
     display: inline-block;
     width: 470px;
     margin-top: 150px;
     margin-left: 5%;
 }
-.description p.term {
+.term {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -125,9 +133,46 @@ span.description {
     color: rgba(208, 214, 249, 1);
     line-height: 32px;
 }
-
-img.image {
-    position: relative;
-    right: -98px;
-    bottom: -50px;
+/* tablet view */
+@media (max-width: 768px) {
+    body {
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+        background-repeat: no-repeat;
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 450px;
+    }
+    .preview {
+        float: none;
+        margin-top: 5%;
+        margin-left: 0;
+        width: 100%;
+    }
+    .preview h2 b {
+        margin-left: 5%;
+        font-size: 20px;
+    }
+    .preview h2 {
+        font-size: 20px;
+    }
+    article {
+        margin-top: 450px;
+    }
+    .navigation {
+        float: none;
+        flex-direction: row;
+        height: fit-content;
+        width: 40%;
+        margin: 5% auto;
+    }
+    .description {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
 }
