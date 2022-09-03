@@ -1,6 +1,7 @@
-# Frontend Mentor - Space tourism website
+# Responsive Space Tourism Website
 
 ![Design preview for the Space tourism website coding challenge](./preview.jpg)
+
 
 ## Welcome! 👋
 
