@@ -1,0 +1,230 @@
+/* Reset dan Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 192px;
+    color: white;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.nav-head {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.nav-list {
+    display: flex;
+    width: 830px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .07);
+    backdrop-filter: blur(15px);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    padding: 36px 0;
+}
+
+.nav-list a:hover, .active {
+    border-bottom: 2px solid white;
+}
+
+.menu {
+    display: none;
+}
+
+/* Preview Section */
+.preview {
+    float: left;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.preview h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: white;
+}
+
+.preview h2 b {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    opacity: .25;
+}
+
+.preview img {
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+/* Main Content */
+.main {
+    float: right;
+    width: 445px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.destination {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.destination a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    padding: 10px 0;
+}
+
+.destination a:hover {
+    border-bottom: 2px solid white;
+}
+
+article {
+    margin-top: 50px;
+}
+
+.description {
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(56, 59, 75, 1);
+}
+
+.description h1 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(208, 214, 249, 1);
+}
+
+.detail-left {
+    float: left;
+    margin-top: 25px;
+}
+
+.detail-right {
+    float: right;
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+.detail-left p, .detail-right p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    color: rgba(208, 214, 249, 1);
+    margin-bottom: 20px;
+}
+
+.detail-left h2, .detail-right h2 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+}
+
+/* Tablet View */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 500px;
+    }
+    .preview {
+        float: none;
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .preview img {
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin: 5% auto;
+    }
+    .main {
+        float: none;
+        width: 80%;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .description h1 {
+        font-size: 80px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .detail-left, .detail-right {
+        margin: 5% auto;
+        float: none;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    body {
+        background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+    .preview img {
+        width: 170px;
+        height: 170px;
+        margin-top: 10%;
+    }
+    .main {
+        width: 90%;
+    }
+    .description h1 {
+        font-size: 56px;
+    }
+    .description p {
+        font-size: 15px;
+    }
+    .detail-left, .detail-right {
+        float: none;
+        margin: 5% auto;
+    }
+}

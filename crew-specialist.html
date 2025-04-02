@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="css/crew.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8594c0baac.js" crossorigin="anonymous"></script>
+  <title>Crew</title>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="assets/shared/logo.svg" alt="logo"></a>
+  <nav class="nav-head">
+    <div class="nav-list">
+    <a href="index.html"><b>00</b> HOME</a>
+    <a href="destination-moon.html"><b>01</b> DESTINATION</a>
+    <a class="active" href="crew-commander.html"><b>02</b> CREW</a>
+    <a href="technology-vehicle.html"><b>03</b> TECHNOLOGY</a>
+    </div>
+    <span class="menu">
+      <i class="fa-solid fa-bars"></i>
+    </span>
+  </nav>
+  </header>
+  <section class="preview">
+    <h2><b>02</b> MEET YOUR CREW</h2>
+  </section>
+  <picture>
+    <img class="image" src="assets/crew/image-mark-shuttleworth.png" alt="specialist">
+  </picture>
+    <article class="main">
+      <div class="description">
+        <h2>MISSION SPECIALIST</h2>
+        <h1>MARK SHUTTLEWORTH</h1>
+        <p>Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+      </div>
+      <div class="crew-list">
+        <div id="commander" class="commander"></div>
+        <div id="specialist" class="active specialist"></div>
+        <div id="pilot" class="pilot"></div>
+        <div id="engineer" class="engineer"></div>
+      </div>
+    </article>
+    <script src="js/crew.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

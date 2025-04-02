@@ -1,0 +1,207 @@
+/* Reset dan Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 192px;
+    color: white;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.nav-list {
+    display: flex;
+    width: 830px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .07);
+    backdrop-filter: blur(15px);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    padding: 36px 0;
+}
+
+.nav-list a:hover, .active {
+    border-bottom: 2px solid white;
+}
+
+.menu {
+    display: none;
+}
+
+/* Article Styles */
+article {
+    width: 450px;
+    margin-top: 15%;
+    margin-left: 10%;
+    float: left;
+    color: white;
+}
+
+article h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 4.725px;
+    margin-bottom: 20px;
+}
+
+article h1 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 172px;
+    margin-bottom: 30px;
+}
+
+article p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+/* Aside Styles */
+aside {
+    float: right;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    margin-top: 20%;
+    margin-right: 20%;
+}
+
+aside:hover {
+    box-shadow: 0 0 1px 70px rgba(255, 255, 255, .1);
+    transition: .3s ease-in-out;
+}
+
+aside a {
+    color: black;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/* Tablet View */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url('../assets/home/background-home-tablet.jpg');
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 500px;
+    }
+    article {
+        margin: 15% auto;
+        float: none;
+        text-align: center;
+    }
+    aside {
+        float: none;
+        margin: 8% auto;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+    }
+    .logo {
+        margin: 20px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        padding: 40% 0;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .slide {
+        transform: translateX(0);
+    }
+    .menu {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .menu i {
+        margin-right: 30px;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    article {
+        width: 90%;
+        text-align: center;
+    }
+    article h2 {
+        font-size: clamp(14px, 4vw, 18px);
+    }
+    article h1 {
+        font-size: clamp(50px, 10vw, 80px);
+        line-height: 100px;
+    }
+    article p {
+        font-size: clamp(12px, 4vw, 15px);
+        line-height: 25px;
+    }
+    aside {
+        width: 150px;
+        height: 150px;
+        margin: 8% auto;
+    }
+    aside:hover {
+        box-shadow: 0 0 1px 40px rgba(255, 255, 255, .1);
+    }
+    aside a {
+        font-size: 20px;
+    }
+}

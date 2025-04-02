@@ -1,0 +1,249 @@
+/* Reset dan Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 192px;
+    color: white;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.nav-head {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.nav-list {
+    display: flex;
+    width: 830px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .07);
+    backdrop-filter: blur(15px);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    padding: 36px 0;
+}
+
+.nav-list a:hover, .active {
+    border-bottom: 2px solid white;
+}
+
+.menu {
+    display: none;
+}
+
+/* Preview Section */
+.preview {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.preview h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: white;
+}
+
+.preview h2 b {
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    opacity: .25;
+}
+
+picture {
+    position: relative;
+}
+
+.image {
+    display: block;
+    height: 544px;
+    width: 450px;
+    object-fit: fill;
+    position: absolute;
+    right: -500px;
+}
+
+/* Main Content */
+.main {
+    float: left;
+    width: 650px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.description h2 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+    opacity: .5;
+}
+
+.description h1 {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 56px;
+    color: white;
+    margin-top: 20px;
+}
+
+.description p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(208, 214, 249, 1);
+    margin-top: 40px;
+}
+
+.crew-list {
+    display: flex;
+    width: 132px;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.crew-list div {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: .17;
+    cursor: pointer;
+}
+
+.crew-list div:hover, .crew-list div.active {
+    opacity: 1;
+    transition: .3s;
+}
+
+/* Tablet View */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        background-image: url('../assets/crew/background-crew-tablet.jpg');
+    }
+    header {
+        height: fit-content;
+    }
+    .nav-list {
+        width: 500px;
+    }
+    .preview {
+        float: none;
+        margin-top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .image {
+        height: 450px;
+        object-fit: contain;
+        bottom: -800px;
+        left: 20%;
+    }
+    .main {
+        float: none;
+        width: 70%;
+        height: 700px;
+        margin: 5% auto;
+        text-align: center;
+    }
+    .description h2 {
+        font-size: 24px;
+    }
+    .description h1 {
+        font-size: 40px;
+    }
+    .description p {
+        font-size: 16px;
+    }
+    .crew-list {
+        margin: 10% auto;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    body {
+        min-height: 100vh;
+        background-image: url('../assets/crew/background-crew-mobile.jpg');
+        overflow-x: hidden;
+    }
+    .logo {
+        margin: 20px;
+    }
+    .nav-list {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        padding: 40% 0;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .slide {
+        transform: translateX(0);
+    }
+    .preview {
+        margin: 5% auto;
+        text-align: center;
+    }
+    .preview h2, .preview h2 b {
+        font-size: 16px;
+    }
+    .image {
+        position: static;
+        height: 223px;
+        border-bottom: 1px solid rgb(86, 89, 102);
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main {
+        width: 90%;
+        height: fit-content;
+        margin-top: 100px;
+    }
+    .description h2 {
+        font-size: 16px;
+    }
+    .description h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .crew-list {
+        position: relative;
+        top: -260px;
+    }
+}
