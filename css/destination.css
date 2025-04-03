@@ -1,3 +1,4 @@
+/* Reset dan Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,10 @@
 }
 
 body {
+    min-height: 100vh;
     background-image: url('../assets/destination/background-destination-desktop.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -17,9 +20,11 @@ header {
     height: 192px;
     color: white;
 }
+
 .logo {
     margin-left: 100px;
 }
+
 .nav-head {
     display: flex;
     align-items: center;
@@ -39,13 +44,10 @@ header {
     font-size: 16px;
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
-    padding-bottom: 36px;
-    padding-top: 36px;
+    padding: 36px 0;
 }
-.nav-list a:hover {
-    border-bottom: 2px solid white;
-}
-.active {
+
+.nav-list a:hover, .active {
     border-bottom: 2px solid white;
 }
 
@@ -53,6 +55,7 @@ header {
     display: none;
 }
 
+/* Preview Section */
 .preview {
     float: left;
     margin-top: 5%;
@@ -76,6 +79,7 @@ header {
     margin-left: 5%;
 }
 
+/* Main Content */
 .main {
     float: right;
     width: 445px;
@@ -94,15 +98,17 @@ header {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 2.7px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
+
 .destination a:hover {
     border-bottom: 2px solid white;
 }
+
 article {
     margin-top: 50px;
 }
+
 .description {
     padding-bottom: 80px;
     border-bottom: 1px solid rgba(56, 59, 75, 1);
@@ -143,51 +149,35 @@ article {
     font-size: 28px;
     color: white;
 }
-/* tablet view */
-@media (max-width: 768px) {
+
+/* Tablet View */
+@media (min-width: 481px) and (max-width: 1024px) {
     body {
         background-image: url('../assets/destination/background-destination-tablet.jpg');
-        background-repeat: no-repeat;
     }
     header {
         height: fit-content;
     }
     .nav-list {
-        width: 450px;
+        width: 500px;
     }
     .preview {
         float: none;
         margin-top: 5%;
-        margin-left: 0;
         width: 100%;
-    }
-    .preview h2 b {
-        margin-left: 5%;
-        font-size: 20px;
-    }
-    .preview h2 {
-        font-size: 20px;
+        text-align: center;
     }
     .preview img {
         display: block;
         width: 300px;
         height: 300px;
-        margin-top: 5%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 5% auto;
     }
     .main {
         float: none;
-        margin: 5% auto;
         width: 80%;
+        margin: 5% auto;
         text-align: center;
-    }
-    .destination {
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-    .description {
-        padding-bottom: 50px;
     }
     .description h1 {
         font-size: 80px;
@@ -195,65 +185,16 @@ article {
     .description p {
         font-size: 16px;
     }
-    .detail-left {
-        margin-left: 15%;
-    }
-    .detail-right {
-        margin-right: 15%;
+    .detail-left, .detail-right {
+        margin: 5% auto;
+        float: none;
     }
 }
-/* mobile view */
-@media (max-width: 375px) {
+
+/* Mobile View */
+@media (max-width: 480px) {
     body {
         background-image: url('../assets/destination/background-destination-mobile.jpg');
-        overflow-x: hidden;
-    }
-    .logo {
-        margin: 20px;
-    }
-    .nav-list {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 60%;
-        height: 100vh;
-        padding: 40% 0;
-        z-index: 1;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: flex-start;
-        transform: translateX(100%);
-        transition: .5s;
-    }
-    .slide {
-        transform: translateX(0);
-    }
-    .nav-list a {
-        padding: 20px 0;
-        margin-left: 20px;
-    }
-    .nav-list a:hover {
-        border-bottom: none;
-    }
-    .nav-list .active {
-        border-bottom: none;
-    }
-    .menu {
-        display: block;
-        position: relative;
-        z-index: 2;
-    }
-    .menu i {
-        margin-right: 30px;
-        font-size: 2em;
-        cursor: pointer;
-    }
-    .preview {
-        margin: 5% auto;
-        text-align: center;
-    }
-    .preview h2, .preview h2 b {
-        font-size: 16px;
     }
     .preview img {
         width: 170px;
@@ -263,22 +204,14 @@ article {
     .main {
         width: 90%;
     }
-    article {
-        margin: 5% auto;
-        width: 100%;
-    }
     .description h1 {
         font-size: 56px;
     }
     .description p {
         font-size: 15px;
     }
-    .detail-left {
+    .detail-left, .detail-right {
         float: none;
         margin: 5% auto;
-    }
-    .detail-right {
-        float: none;
-        margin: 10% auto;
     }
 }
