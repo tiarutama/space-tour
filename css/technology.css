@@ -1,3 +1,4 @@
+/* Reset dan Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +6,10 @@
 }
 
 body {
+    min-height: 100vh;
     background-image: url('../assets/technology/background-technology-desktop.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -17,14 +20,17 @@ header {
     height: 192px;
     color: white;
 }
+
 .logo {
     margin-left: 100px;
 }
+
 .nav-head {
     display: flex;
     align-items: center;
     height: 50%;
 }
+
 .nav-list {
     display: flex;
     width: 830px;
@@ -34,18 +40,16 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
 .nav-list a {
     text-decoration: none;
     font-size: 16px;
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
-    padding-bottom: 36px;
-    padding-top: 36px;
+    padding: 36px 0;
 }
-.nav-list a:hover {
-    border-bottom: 2px solid white;
-}
-.active {
+
+.nav-list a:hover, .active {
     border-bottom: 2px solid white;
 }
 
@@ -53,10 +57,12 @@ header {
     display: none;
 }
 
+/* Preview Section */
 .preview {
     margin-top: 5%;
     margin-left: 10%;
 }
+
 .preview h2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
@@ -64,6 +70,7 @@ header {
     letter-spacing: 4.725px;
     color: white;
 }
+
 .preview h2 b {
     color: rgba(255, 255, 255, 1);
     font-size: 28px;
@@ -78,9 +85,11 @@ header {
     float: right;
 }
 
+/* Main Content */
 .main {
     width: 100%;
 }
+
 .navigation {
     display: flex;
     flex-direction: column;
@@ -90,6 +99,7 @@ header {
     margin-left: 7%;
     float: left;
 }
+
 .navigation div {
     display: flex;
     width: 70px;
@@ -104,19 +114,23 @@ header {
     color: white;
     cursor: pointer;
 }
+
 .navigation div:hover, .navigation div.active {
     background-color: rgba(255, 255, 255, 1);
     color: rgba(11, 13, 23, 1);
 }
+
 .number {
     margin: auto;
 }
+
 .description {
     display: inline-block;
     width: 470px;
     margin-top: 150px;
     margin-left: 5%;
 }
+
 .term {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
@@ -125,6 +139,7 @@ header {
     color: rgba(208, 214, 249, 1);
     margin-bottom: 20px;
 }
+
 .description h1 {
     font-family: 'Bellefair', serif;
     font-weight: 400;
@@ -132,6 +147,7 @@ header {
     color: white;
     margin-bottom: 40px;
 }
+
 .description p {
     font-family: 'Barlow', sans-serif;
     font-weight: 400;
@@ -139,11 +155,11 @@ header {
     color: rgba(208, 214, 249, 1);
     line-height: 32px;
 }
-/* tablet view */
+
+/* Tablet View */
 @media (max-width: 768px) {
     body {
         background-image: url('../assets/technology/background-technology-tablet.jpg');
-        background-repeat: no-repeat;
     }
     header {
         height: fit-content;
@@ -154,15 +170,7 @@ header {
     .preview {
         float: none;
         margin-top: 5%;
-        margin-left: 0;
         width: 100%;
-    }
-    .preview h2 b {
-        margin-left: 5%;
-        font-size: 20px;
-    }
-    .preview h2 {
-        font-size: 20px;
     }
     .main {
         margin-top: 450px;
@@ -182,7 +190,8 @@ header {
         padding-bottom: 20px;
     }
 }
-/* mobile view */
+
+/* Mobile View */
 @media (max-width: 375px) {
     body {
         background-image: url('../assets/technology/background-technology-mobile.jpg');
@@ -198,7 +207,6 @@ header {
         width: 60%;
         height: 100vh;
         padding: 40% 0;
-        z-index: 1;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-start;
@@ -208,33 +216,9 @@ header {
     .slide {
         transform: translateX(0);
     }
-    .nav-list a {
-        padding: 20px 0;
-        margin-left: 20px;
-    }
-    .nav-list a:hover {
-        border-bottom: none;
-    }
-    .active {
-        border-bottom: none;
-    }
-    .menu {
-        display: block;
-        position: relative;
-        z-index: 2;
-    }
-    .menu i {
-        margin-right: 30px;
-        font-size: 2em;
-        cursor: pointer;
-    }
     .preview {
         margin: 5% auto;
-        margin-bottom: 0;
         text-align: center;
-    }
-    .preview h2, .preview h2 b {
-        font-size: 16px;
     }
     .image {
         width: 375px;
